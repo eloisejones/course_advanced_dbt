@@ -129,6 +129,10 @@ The amount of monthly recurring revenue associated with the subscription retaine
 The amount of monthly recurring revenue associated with the subscription earned in the previous month.
 {% enddocs %}
 
+{% docs finance__fct_mrr__column__rolling_annual_avg_mrr_amount %}
+The rolling average amount of monthly recurring revenue associated with the subscription per month in the last 12 months.
+{% enddocs %}
+
 {% docs finance__fct_mrr__column__change_category %}
 The category the subscription falls into based on the current month (e.g. new, churned, retained, reactivated)
 {% enddocs %}

@@ -161,7 +161,8 @@ mrr_with_changes AS (
             0.0
         ) AS previous_month_mrr_amount,
 
-        mrr - previous_month_mrr_amount AS mrr_change
+        mrr - previous_month_mrr_amount AS mrr_change,
+        {{ rolling_aggregation('mrr', 'user_id, subscription_id', 'date_month', 'avg', 11, 'rolling_annual_avg_mrr_amount') }}
     FROM
         unioned
 ),
@@ -179,6 +180,7 @@ final AS (
         mrr_change,
         LEAST(mrr, previous_month_mrr_amount) AS retained_mrr_amount,
         previous_month_mrr_amount,
+        rolling_annual_avg_mrr_amount,
 
         CASE
             WHEN is_first_subscription_month THEN 'new'
