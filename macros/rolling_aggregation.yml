@@ -17,3 +17,6 @@ macros:
       - name: num_rows_preceding
         type: integer
         description: The number of rows preceding the current row to include in the aggregation. Default 6.
+      - name: output_column_name
+        type: string
+        description: The desired name of the final column produced. Default value constructed based on other parameter values.

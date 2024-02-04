@@ -43,6 +43,9 @@ models:
       - name: previous_month_mrr_amount
         description: '{{ doc("finance__fct_mrr__column__previous_month_mrr_amount") }}'
 
+      - name: rolling_annual_avg_mrr_amount
+        description: '{{ doc("finance__fct_mrr__column__rolling_annual_avg_mrr_amount") }}'
+
       - name: change_category
         description: '{{ doc("finance__fct_mrr__column__change_category") }}'
 
