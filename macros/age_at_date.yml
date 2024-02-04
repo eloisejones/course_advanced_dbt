@@ -1,0 +1,10 @@
+macros:
+  - name: age_at_date
+    description: A macro to calculate a person's age on a given date.
+    arguments:
+      - name: birthdate
+        type: Date
+        description: The person's birthdate.
+      - name: comparison_date
+        type: Date
+        description: The date for which you want to know the person's age.
