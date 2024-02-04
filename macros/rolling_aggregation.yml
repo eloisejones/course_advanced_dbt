@@ -1,0 +1,19 @@
+macros:
+  - name: rolling_aggregation
+    description: A macro to aggregate data in a column over a rolling number of preceding rows.
+    arguments:
+      - name: column_name
+        type: string
+        description: The name of the column you want to aggregate.
+      - name: partition_by
+        type: string
+        description: The list of columns you want to partition by.
+      - name: order_by
+        type: string
+        description: The list of columns you want to order the results by. Default 'created_at'.
+      - name: aggregation_function
+        type: string
+        description: The function you want to use to aggregate the data. Default 'avg'.
+      - name: num_rows_preceding
+        type: integer
+        description: The number of rows preceding the current row to include in the aggregation. Default 6.
