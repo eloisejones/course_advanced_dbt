@@ -3,7 +3,7 @@ models:
     config:
       tags: p0
     description: '{{ doc("finance__fct_mrr__table") }}'
-      
+
     columns:
       - name: surrogate_key
         description: '{{ doc("finance__fct_mrr__column__surrogate_key") }}'
