@@ -75,6 +75,22 @@ The number of times the user viewed a page during the specified session.
 The number of times the user watched videos during the specified session.
 {% enddocs %}
 
+
+## Intermediate - Subscription Periods
+
+{% docs intermediate__int_subscription_periods__table %}
+This is an intermediate model that calculates subscription period start_month and end_month ranges.
+{% enddocs %}
+
+{% docs intermediate__int_subscription_periods__column__start_month %}
+The month the subscription is considered started for the purposes of MRR reporting.
+{% enddocs %}
+
+{% docs intermediate__int_subscription_periods__column__end_month %}
+The month the subscription is considered ended for the purposes of MRR reporting.
+{% enddocs %}
+
+
 ## Marts - Core - Subscriptions
 
 *None*
